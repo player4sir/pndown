@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  video-downloader:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: video_downloader
+    ports:
+      - "8080:8080"
+    volumes:
+      # Mount the local downloads directory to the container
+      - ./downloads:/app/downloads
+    restart: unless-stopped
+    # Optional: configure command-line arguments
+    # command: ["--port", "8080", "--workers", "16", "--retries", "3"]

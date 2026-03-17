@@ -1,0 +1,11 @@
+.git
+.gitignore
+.vscode
+.idea
+*.exe
+ffmpeg.exe
+main.exe
+ffmpeg.zip
+ffmpeg_temp/
+downloads/
+.tmp_*
